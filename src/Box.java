@@ -1,19 +1,11 @@
 public class Box<T> {
-    private T value;
+    private T item;
 
-    public Box(T value) {
-        this.value = value;
+    public void setItem(T item) {
+        this.item = item;
     }
 
-    public T getValue() {
-        return value;
-    }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
-
-    public void printValue() {
-        System.out.println("The value in the box is: " + value);
+    public T getItem() {
+        return item;
     }
 }
